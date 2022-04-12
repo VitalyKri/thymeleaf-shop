@@ -1,0 +1,3 @@
+[submodule "gb-api"]
+	path = gb-api
+	url = git@github.com:VitalyKri/gb-api.git
