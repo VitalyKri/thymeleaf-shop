@@ -15,27 +15,48 @@
 
 <div class="container">
 
-    <form class="row g-3 needs-validation" th:action="@{/product}" th:object="${product}" method='post'>
+    <form class="row g-3 needs-validation" th:action="@{/order}" th:object="${order}" method='post'>
         <input type="hidden" th:field="*{id}">
         <div class="col-md-8">
             <div class="input-group mb-3">
-                <span class="input-group-text" id="title">Название</span>
+                <span class="input-group-text" id="address">Адрес</span>
                 <input type="text" class="form-control" aria-label="Sizing example input"
-                       aria-describedby="inputGroup-sizing-default" th:field="*{title}">
+                       aria-describedby="inputGroup-sizing-default" th:field="*{address}">
             </div>
         </div>
         <div class="col-md-8">
             <div class="input-group mb-3">
-                <span class="input-group-text" id="cost">Цена</span>
+                <span class="input-group-text" id="firstname">Имя</span>
                 <input type="text" class="form-control" aria-label="Sizing example input"
-                       aria-describedby="inputGroup-sizing-default" th:field="*{cost}">
+                       aria-describedby="inputGroup-sizing-default" th:field="*{firstname}">
             </div>
         </div>
         <div class="col-md-8">
             <div class="input-group mb-3">
-                <span class="input-group-text" id="manufactureDate">Дата изготовления</span>
+                <span class="input-group-text" id="lastname">Фамилия</span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                       aria-describedby="inputGroup-sizing-default" th:field="*{lastname}">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="phone">Телефон</span>
+                <input type="tel" class="form-control" aria-label="Sizing example input"
+                       aria-describedby="inputGroup-sizing-default" th:field="*{phone}">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="mail">Электронная почта</span>
+                <input type="email" class="form-control" aria-label="Sizing example input"
+                       aria-describedby="inputGroup-sizing-default" th:field="*{mail}">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="deliveryDate">Дата доставки</span>
                 <input type="date" class="form-control" aria-label="Sizing example input"
-                       aria-describedby="inputGroup-sizing-default" th:field="*{manufactureDate}">
+                       aria-describedby="inputGroup-sizing-default" th:field="*{deliveryDate}">
             </div>
         </div>
         <div class="col-md-8">
