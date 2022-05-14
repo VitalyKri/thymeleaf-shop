@@ -4,8 +4,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ru.gb.api.product.api.ProductGateway;
-import ru.gb.api.product.dto.ProductDto;
+import ru.gb.gbapi.product.api.ProductGateway;
+import ru.gb.gbapi.product.dto.ProductDto;
 
 
 @Controller
